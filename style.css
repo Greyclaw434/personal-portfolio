@@ -42,6 +42,10 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 5%;
+    position: sticky;
+    top: 0;
+    background-color: var(--bg-color);
+    z-index: 1000;
 }
 
 .logo {
@@ -63,6 +67,11 @@ nav ul li a {
 
 nav ul li a:hover {
     color: var(--primary-color);
+}
+
+nav ul li a.active-link {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
 }
 
 
