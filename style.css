@@ -1,0 +1,37 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --primary-color: #c2c2c2;
+
+    --font-main: system-ui, -apple-system, sans-serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+
+h1, h2, h3 {
+    line-height: 1.2;
+}
+
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
