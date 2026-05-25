@@ -3,6 +3,7 @@ const navMenu = document.querySelector('nav ul');
 const navLinks = document.querySelectorAll('nav ul li a');
 const sections = document.querySelectorAll('section');
 const navItems = document.querySelectorAll('header nav ul li a');
+const faders = document.querySelectorAll('.fade-in');
 
 
 
@@ -41,4 +42,21 @@ const observer = new IntersectionObserver((entries) => {
 
 sections.forEach(section => {
     observer.observe(section);
+});
+const appearOptions = {
+    threshold: 0.15 
+};
+const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+            return; 
+        } else {
+            entry.target.classList.add('appear');
+            
+            appearOnScroll.unobserve(entry.target);
+        }
+    });
+}, appearOptions);
+faders.forEach(fader => {
+    appearOnScroll.observe(fader);
 });
