@@ -230,3 +230,44 @@ nav ul li a:hover {
     color: var(--primary-color);
     border-bottom: 2px solid var(--primary-color); 
 }
+
+/* --- CONTACT SECTION --- */
+
+#contact {
+    padding: 5rem 5%;
+    text-align: center; 
+}
+
+
+form {
+    max-width: 600px; 
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column; 
+    gap: 1.5rem; 
+    margin-top: 2rem;
+    text-align: left; 
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; 
+}
+
+
+input, textarea {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit; 
+}
+
+textarea {
+    resize: vertical; 
+}
+
+
+input:focus, textarea:focus {
+    outline: 2px solid var(--primary-color);
+}
