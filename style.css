@@ -134,11 +134,11 @@ nav ul li a:hover {
     color: var(--text-color);
 }
 /* --- PROJECTS SECTION --- */
-#projects {
+#projects, #projects-gamedev {
     padding: 5rem 5%;
 }
 
-#projects h2 {
+#projects h2, #projects-gamedev h2 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 3rem;
